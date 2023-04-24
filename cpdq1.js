@@ -9,7 +9,7 @@
 *******************************
 
 [rewrite_local]
-^https:\/\/apiios_dq\.xiangha\.com url script-response-body https://raw.githubusercontent.com/hgawx888/qx/main/mypy.js
+^https:\/\/apiios_dq\.xiangha\.com url script-response-body https://raw.githubusercontent.com/hgawx888/qx/main/cpdq1.js
 
 [mitm] 
 hostname = dq.xiangha.com,apiios_dq.xiangha.com
