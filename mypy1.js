@@ -18,7 +18,10 @@ hostname = ipmapi.intbull.com
 var body = $response.body;
 var objc = JSON.parse(body);
 
-body = body.replace(/"vipGrade\":0,'"vipGrade":1,');
+const vip = '/user/info';
+if (url.indexof(vip) != -1) {
+    obj.data.vipGrade = 1
+    body = JSON.stringify(objc);
+}
 
-body = JSON.stringify(objc);
 $done({ body });
