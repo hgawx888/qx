@@ -20,7 +20,7 @@ var objc = JSON.parse(body);
 
 const vip = '/user/info';
 if (url.indexof(vip) != -1) {
-    obj.data.vipGrade = 1
+    obj.data.vipGrade = 1;
     body = JSON.stringify(objc);
 }
 
