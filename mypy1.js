@@ -18,7 +18,7 @@ hostname = ipmapi.intbull.com
 var body = $response.body;
 var objc = JSON.parse(body);
 
-const vip = '/user/info';
+const vip = '/scenic/user/info';
 if (url.indexof(vip) != -1) {
     obj.data.vipGrade = 1;
     body = JSON.stringify(objc);
