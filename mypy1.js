@@ -8,8 +8,7 @@
 *******************************
 %¥
 [rewrite_local]
-^https?:\/\/ipmapi\.intbull\.com\/v1\/scenic\/user\/info.*? url script-response-body https://raw.githubusercontent.com/hgawx888/qx/main/mypy1.js
-
+^https:\/\/ipmapi\.intbull\.com\/v1
 
 [mitm]
 hostname = ipmapi.intbull.com
