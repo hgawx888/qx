@@ -16,5 +16,9 @@ hostname = ipmapi.intbull.com
 %¥
 *******************************/
 var body = $response.body;
+var objc = JSON.parse(body);
+
 body = body.replace(/"vipGrade\":0,'"vipGrade":1,');
-$done(body);
+
+body = JSON.stringify(objc);
+$done({ body });
