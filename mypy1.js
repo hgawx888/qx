@@ -15,6 +15,6 @@
 hostname = ipmapi.intbull.com
 %¥
 *******************************/
-var body=$response.body;
-body = body.replace(/"vipGrade\": 0,'"vipGrade": 1,');
+var body = $response.body;
+body = body.replace(/"vipGrade\":0,'"vipGrade":1,');
 $done(body);
