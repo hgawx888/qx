@@ -17,9 +17,9 @@ hostname = ipmapi.intbull.com
 *******************************/
 
 var body = $response.body; //声明一个变量body井以响应消息体赋值
-var obj = JSON.parse(body); //JSON.parsej将json形式的body转变成对象处理
+var objc = JSON.parse(body); //JSON.parsej将json形式的body转变成对象处理
 
-obj.data.vipGrade=1;
+objc.data.vipGrade=1;
 
-body = JSON.stringify(obj); //重新打包回json字符串
+body = JSON.stringify(objc); //重新打包回json字符串
 $done(body); //结束修改
