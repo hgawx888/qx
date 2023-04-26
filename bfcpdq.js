@@ -17,14 +17,16 @@ hostname = apiios_dq.xiangha.com
 *******************************/
 
 var body = $response.body; //声明一个变量body井以响应消息体赋值
-var objc = JSON.parse(body); //JSON.parsej将json形式的body转变成对象处理
+var url = $request.url;
+var obj = JSON.parse(body); //JSON.parsej将json形式的body转变成对象处理
 
-comst vip = `/v4/user/getUserData`;
-comst vip = `/v4/dish/info`;
+comst bfcpdq = `/v4/user/getUserData`;
+comst bfcpdq = `/v4/dish/info`;
+if (url.indexof(bfcpdq) != -1) {
+obj.data.is_vip=2;
+obj.data.isShow=2;
+obj.data.is_open_vip=2;
 
-objc.data.is_vip=2;
-objc.data.isShow=2;
-objc.data.is_open_vip=2;
-
-body = JSON.stringify(objc); //重新打包回json字符串
+body = JSON.stringify(obj); //重新打包回json字符串
+}
 $done(body); //结束修改
