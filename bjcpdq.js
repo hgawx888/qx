@@ -12,7 +12,7 @@
 ^https?:\/\/apiios_dq\.xiangha\.com\/v4\/(/user\/getUserData|/dish\/info) url script-response-body https://raw.githubusercontent.com/hgawx888/qx/main/bjcpdq.js
 
 [mitm] 
-hostname = ipmapi.intbull.com
+hostname = apiios_dq.xiangha.com
 
 *******************************/
 
