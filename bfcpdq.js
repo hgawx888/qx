@@ -22,9 +22,9 @@ var objc = JSON.parse(body); //JSON.parsej将json形式的body转变成对象处
 comst vip = `/v4/user/getUserData`;
 comst vip = `/v4/dish/info`;
 
-objc.data.data.is_vip=2;
-objc.data.data.isShow=2;
-objc.data.data.is_open_vip=2;
+objc.data.is_vip=2;
+objc.data.isShow=2;
+objc.data.is_open_vip=2;
 
 body = JSON.stringify(objc); //重新打包回json字符串
 $done(body); //结束修改
