@@ -8,7 +8,7 @@
 ***************************
 %¥
 [rewrite_local]
-^https?:\/\/apiios_dq\.xiangha\.com\/v4\/user\/getUserData|https?:\/\/apiios_dq\.xiangha\.com\/v4\/dish\/info.*? url script-response-body bfcpq.js
+^https?:\/\/apiios_dq\.xiangha\.com\/v4\/user\/getUserData|https?:\/\/apiios_dq\.xiangha\.com\/v4\/dish\/info.*? url script-response-body https://raw.githubusercontent.com/hgawx888/qx/main/bjcpdq.js
 
 
 [mitm]
