@@ -1,32 +1,22 @@
 /******************************
-
-脚本功能：菜谱大全ViP
-软件版本：5.4.2
-脚本作者：hgawx
-更新时间：2023-4-26
-使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
-
-*******************************
-
+⚠️如果放远程，请把bfcpq.js替换成运程链接⚠️
+  🧚🏻‍♂️作者：🍡魔法师、木木🍡
+  wx交流群：1077223830
+🫧脚本名称:菜谱大全vip
+🫧建议配合working copy一起食用
+✈️working copy下载地址https://apps.apple.com/app/id896694807✈️
+***************************
+%¥
 [rewrite_local]
-^https?:\/\/apiios_dq\.xiangha\.com\/v4 url script-response-body https://raw.githubusercontent.com/hgawx888/qx/main/bfcpdq.js
+^https?:\/\/apiios_dq\.xiangha\.com\/v4\/user\/getUserData|https?:\/\/apiios_dq\.xiangha\.com\/v4\/dish\/info.*? url script-response-body bfcpq.js
 
-[mitm] 
-hostname = apiios_dq.xiangha.com
 
+[mitm]
+hostname = apiios_dq.xiangha.com,apiios_dq.xiangha.com
+%¥
 *******************************/
-
-var body = $response.body; //声明一个变量body井以响应消息体赋值
-var url = $request.url;
-var obj = JSON.parse(body); //JSON.parsej将json形式的body转变成对象处理
-
-comst bfcpdq = `/v4/user/getUserData`;
-comst bfcpdq = `/v4/dish/info`;
-if (url.indexof(bfcpdq) != -1) {
-obj.data.is_vip=2;
-obj.data.isShow=2;
-obj.data.is_open_vip=2;
-
-body = JSON.stringify(obj); //重新打包回json字符串
-}
-$done(body); //结束修改
+var body=$response.body;
+body = body.replace(/"is_vip\":\d/g,'"is_vip":2');
+body = body.replace(/"isShow\":"\d+"/g,'"isShow":"2"');
+body = body.replace(/"is_open_vip\":\d/g,'"is_open_vip":2');
+$done(body);
