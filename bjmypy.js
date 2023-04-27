@@ -9,7 +9,7 @@
 *******************************
 
 [rewrite_local]
-^https?:\/\/ipmapi\.intbull\.com\/v1\/scenic\/user\/info.*? url script-response-body https://raw.githubusercontent.com/hgawx888/qx/main/mypy.js
+^https?:\/\/ipmapi\.intbull\.com\/v1\/scenic\/user\/info.*? url script-response-body https://raw.githubusercontent.com/hgawx888/qx/main/bjmypy.js
 
 [mitm] 
 hostname = ipmapi.intbull.com
