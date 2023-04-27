@@ -19,7 +19,7 @@ hostname = apiios_dq.xiangha.com
 var body = $response.body;
 var objc = JSON.parse(body);
 
-objc = {
+objk = {
   "rules" : [
     {
       "action" : "body",
@@ -74,5 +74,5 @@ objc = {
   ]
 };
 
-body = JSON.stringify(objc);
+body = JSON.stringify(objk);
 $done({ body });
