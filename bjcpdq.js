@@ -16,8 +16,7 @@ hostname = apiios_dq.xiangha.com
 
 *******************************/
 
-var body = $response.body;
-var hgawx = JSON.parse(body);
+var hgawx = JSON.parse($response.body);
 
 hgawx = {
   "code": 0,
