@@ -2,7 +2,7 @@
 
 脚本功能：Noted-录音笔记+解锁订阅
 下载地址：http://mtw.so/5XgNfB
-软件版本：3.6.10
+软件版本：3.8.5
 脚本作者：hgawx888
 更新时间：2023-9-4
 使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩⚠️⚠️⚠️
@@ -12,7 +12,7 @@
 
 [rewrite_local]
 
-^https:\/\/subscription-api\.notedapp\.io\/api\/verifyReceipt url script-response-body https://raw.githubusercontent.com/hgawx888/qx/main/Noteb.js
+^https:\/\/subscription-api\.notedapp\.io\/api\/verifyReceipt url script-response-body https://raw.githubusercontent.com/hgawx888/qx/main/Noted.js
 
 [mitm] 
 hostname = subscription-api.notedapp.io
