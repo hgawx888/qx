@@ -2,7 +2,6 @@
 
 脚本功能：CEO周课+解锁VIP
 下载地址：http://mtw.so/6rDbGg
-脚本功能：菜谱大全ViP
 软件版本：1.7.2
 脚本作者：hgawx
 更新时间：2023-04-26
@@ -27,7 +26,7 @@ if (url['indexOf'](vip) != -0x1) {
     obj['data']['is_vip'] = 0x1;
     obj['data']['vip_end_time'] = '2099-09-09 08:08:00';
     obj['data']['vip_start_time'] = '2099-09-09 08:08:00';
-    obj['data']['nickname'] = '彭于晏解锁';
+    obj['data']['nickname'] = 'hgawx';
     body = JSON['stringify'](obj);
 }
 $done({
